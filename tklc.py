@@ -41,7 +41,7 @@ def main(argv):
         pct_correct = counts[200] / total_count * 100.0
         codes = ','.join(["%s: %s" % (s, counts[s],) for s in sorted(counts.keys())])
 
-        print("%s: %s: %s%% %s" % (datetime.datetime.now().isoformat()[0:18], k, pct_correct, codes,))
+        print("%s: %s: %s%% %s" % (datetime.datetime.now().isoformat()[0:19], k, pct_correct, codes,))
     return 0
 
 if __name__ == '__main__':
